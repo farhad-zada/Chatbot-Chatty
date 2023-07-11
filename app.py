@@ -1,8 +1,13 @@
+import os
 import openai
 import gradio
+from dotenv import load_dotenv
 
+load_dotenv()
 
-openai.api_key = "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"
+api = os.environ.get('OPENAI_API_KEY')
+
+openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 system_contents = [
     'You are a friendly and helpful shopping assistant for clothing and watches only.',
