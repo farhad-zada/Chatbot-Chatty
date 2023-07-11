@@ -1,0 +1,5 @@
+/.vscode/*
+/flagged/*
+.env
+
+Pipfile.lock
